@@ -1113,8 +1113,8 @@ export default function App() {
         </div>
 
         <div style={styles.copyrightSection}>
-          <h2 style={styles.copyrightTitle}>DCode</h2>
-          <p style={styles.copyrightText}>Made with ❤️ by DCode</p>
+          <h2 style={styles.copyrightTitle}>Thank You</h2>
+          <p style={styles.copyrightText}></p>
         </div>
       </section>
     </div>
