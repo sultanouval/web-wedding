@@ -3,24 +3,24 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import Countdown from "./components/countdown";
 
-import bg1 from "/img/background1.png";
-import bg2 from "/img/background2.png";
-import bg3 from "/img/background3.png";
+import bg1 from "/img/background1.jpg";
+import bg2 from "/img/background2.jpg";
+import bg3 from "/img/background3.jpg";
 import bg4 from "/img/background4.jpg";
 import bg5 from "/img/background5.jpg";
 import bg6 from "/img/background6.jpg";
 import card from "/img/card.png";
 import bni from "/img/BNI.png";
 import cincin from "/img/cincin.png";
-import wayang1 from "/img/wayang1.png";
-import wayang2 from "/img/wayang2.png";
-import cewekcowok1 from "/img/cewekcowok1.jpg";
-import cewekcowok2 from "/img/cewekcowok2.jpg";
-import cewekcowok3 from "/img/cewekcowok3.jpg";
-import cewekcowok4 from "/img/cewekcowok4.jpg";
-import cewekcowok5 from "/img/cewekcowok5.jpg";
+import bunga1 from "/img/flower1.png";
+import bunga2 from "/img/flower2.png";
+import cewekcowok1 from "/img/cewekcowok1.jpeg";
+import cewekcowok2 from "/img/cewekcowok2.jpeg";
+import cewekcowok3 from "/img/cewekcowok3.jpeg";
+import cewekcowok4 from "/img/cewekcowok4.jpeg";
+import cewekcowok5 from "/img/cewekcowok5.jpeg";
 
-import music from "/music/Marry_Your_Daughter.mp3";
+import music from "/music/Elvis Presley - Can't Help Falling In Love (Official Audio).mp3";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCalendarPlus } from "react-icons/fa";
@@ -56,12 +56,12 @@ const styles = {
     zIndex: "20",
     backgroundSize: "cover",
   },
-  wayang1: {
+  bunga1: {
     marginTop: "9rem",
     margin: "0 auto",
   },
   section1Text: {
-    color: "#ffffff",
+    color: "#000000",
     fontFamily: "Playfair Display",
     marginBottom: "0.3rem",
   },
@@ -69,23 +69,23 @@ const styles = {
     fontSize: "2.5rem",
     fontFamily: "Marck Script",
     fontWeight: "bold",
-    color: "#E6D3A3",
+    color: "#000000",
     marginBottom: "0.3rem",
   },
   section1Subtitle: {
-    color: "#ffffff",
+    color: "#000000",
     fontFamily: "Roboto",
     marginBottom: "3rem",
   },
   toText: {
-    color: "#ffffff",
+    color: "#000000",
     fontFamily: "Playfair Display",
   },
   guestName: {
     fontSize: "1.6rem",
     fontWeight: "600",
     fontFamily: "Marck Script",
-    color: "#d6b183",
+    color: "#000000",
     marginBottom: "0.4rem",
   },
   button: {
@@ -115,18 +115,18 @@ const styles = {
     zIndex: "10",
     backgroundSize: "cover",
   },
-  section2WayangContainer: {
+  section2bungaContainer: {
     position: "relative",
     width: "220px",
     height: "50px",
     marginBottom: "15rem",
   },
-  wayangImage: {
+  bunga: {
     position: "absolute",
     top: "0",
     left: "0",
   },
-  wayang2: {
+  bunga2: {
     opacity: "0.7",
   },
   section3: {
@@ -152,12 +152,12 @@ const styles = {
     backgroundSize: "cover",
   },
   roundedCard: {
-    backgroundColor: "#e6cebe",
+    backgroundColor: "#FDFAF6",
     width: "23rem",
     height: "40rem",
     borderRadius: "14rem",
-    border: "10px solid #59362b",
-    color: "#593629",
+    border: "10px solid #A9A9A9",
+    color: "#334443",
   },
   cardContent: {
     display: "flex",
@@ -189,28 +189,28 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     padding: "0 1rem",
-    backgroundColor: "#5c3e33",
+    backgroundColor: "#FDFAF6",
   },
-  wayang1Large: {
+  bunga1Large: {
     width: "120px",
     height: "160px",
     marginBottom: "1rem",
   },
   weFoundLove: {
-    color: "#caaa91",
+    color: "#334443",
     fontSize: "1.4rem",
     marginBottom: "1.4rem",
     fontWeight: "bold",
     fontFamily: "Playfair Display",
   },
   arRumText: {
-    color: "#caaa91",
+    color: "#334443",
     fontSize: "13px",
     marginBottom: "1.4rem",
     fontFamily: "Roboto",
   },
   arRumAyat: {
-    color: "#caaa91",
+    color: "#334443",
     marginBottom: "2rem",
     fontSize: "14px",
     fontFamily: "Playfair Display",
@@ -227,12 +227,12 @@ const styles = {
     backgroundSize: "cover",
   },
   roundedCard2: {
-    backgroundColor: "#e6cebe",
+    backgroundColor: "#FDFAF6",
     width: "23rem",
     height: "48rem",
     borderRadius: "14rem",
-    border: "10px solid #59362b",
-    color: "#593022",
+    border: "10px solid #A9A9A9",
+    color: "#334443",
   },
   brideGroom: {
     fontSize: "2rem",
@@ -268,7 +268,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     padding: "0 1rem",
-    backgroundColor: "#5c3e33",
+    backgroundColor: "#F9F5F0",
   },
   eventCard: {
     width: "25rem",
@@ -290,40 +290,40 @@ const styles = {
     marginBottom: "0.5rem",
   },
   akadTitle: {
-    color: "#613d34",
+    color: "#334443",
     fontSize: "1.8rem",
     marginBottom: "0.5rem",
     fontWeight: "bold",
   },
   eventDate: {
-    color: "#694c42",
+    color: "#334443",
     fontSize: "1.4rem",
     marginBottom: "0.5rem",
     fontWeight: "600",
     fontFamily: "Roboto",
   },
   eventTime: {
-    color: "#6e5448",
+    color: "#334443",
     fontSize: "1.1rem",
     marginBottom: "5rem",
     fontWeight: "600",
     fontFamily: "Roboto",
   },
   eventLocationTitle: {
-    color: "#61453e",
+    color: "#334443",
     fontSize: "14px",
     marginBottom: "0.5rem",
     fontWeight: "bold",
     fontFamily: "Playfair Display",
   },
   eventLocation: {
-    color: "#80685c",
+    color: "#334443",
     fontSize: "14px",
     marginBottom: "0.5rem",
   },
   openMapsBtn: {
-    backgroundColor: "#8b6448",
-    color: "#ffffff",
+    backgroundColor: "#E6D8C3",
+    color: "#334443",
     padding: "0.5rem 1rem",
     borderRadius: "1rem",
     fontSize: "1rem",
@@ -336,7 +336,7 @@ const styles = {
   countdownSection: {
     height: "20rem",
     width: "100%",
-    backgroundColor: "#e6cbba",
+    backgroundColor: "#FDFAF6",
     backgroundPosition: "center",
     display: "flex",
     flexDirection: "column",
@@ -345,7 +345,7 @@ const styles = {
     padding: "0 1rem",
   },
   countdownTitle: {
-    color: "#613d34",
+    color: "#334443",
     fontSize: "2rem",
     marginBottom: "1.5rem",
     fontWeight: "bold",
@@ -366,7 +366,7 @@ const styles = {
   },
   ourMomentSection: {
     width: "100%",
-    backgroundColor: "#e6cbba",
+    backgroundColor: "#F9F5F0",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -376,7 +376,7 @@ const styles = {
   ourMomentTitle: {
     fontSize: "3rem",
     marginBottom: "1rem",
-    color: "#593528",
+    color: "#334443",
     marginLeft: "8rem",
     fontWeight: "bold",
     fontFamily: "Marck Script",
@@ -422,7 +422,7 @@ const styles = {
   weddingGiftSection: {
     height: "25rem",
     width: "100%",
-    backgroundColor: "#e6cbba",
+    backgroundColor: "#F9F5F0",
     backgroundPosition: "center",
     display: "flex",
     flexDirection: "column",
@@ -431,14 +431,14 @@ const styles = {
     padding: "0 1rem",
   },
   weddingGiftTitle: {
-    color: "#6e4f40",
+    color: "#334443",
     fontSize: "2.4rem",
     marginBottom: "0.6rem",
     fontWeight: "bold",
     fontFamily: "Marck Script",
   },
   giftText: {
-    color: "#6e4f40",
+    color: "#334443",
     fontSize: "14px",
     marginBottom: "1.4rem",
     fontWeight: "600",
@@ -484,7 +484,7 @@ const styles = {
   bestWishesSection: {
     height: "40rem",
     width: "100%",
-    backgroundColor: "#5c3e33",
+    backgroundColor: "#FDFAF6",
     backgroundPosition: "center",
     display: "flex",
     flexDirection: "column",
@@ -493,14 +493,14 @@ const styles = {
     padding: "0 1rem",
   },
   bestWishesTitle: {
-    color: "#ccaf8b",
+    color: "#334443",
     fontSize: "3.6rem",
     marginBottom: "0.4rem",
     fontFamily: "Marck Script",
     fontWeight: "bold",
   },
   bestWishesText: {
-    color: "#ccaf8b",
+    color: "#334443",
     fontSize: "15px",
     marginBottom: "0.8rem",
     fontFamily: "Roboto",
@@ -555,47 +555,49 @@ const styles = {
     justifyContent: "center",
     padding: "0 1rem",
     backgroundSize: "cover",
+
+    paddingBottom: "10rem", // geser ke atas sedikit
   },
   footerText: {
-    color: "#6e4f40",
+    color: "#334443",
     fontSize: "14px",
     marginBottom: "0.5rem",
     fontWeight: "600",
     fontFamily: "Roboto",
   },
   footerTitle: {
-    color: "#593a2b",
+    color: "#334443",
     marginBottom: "0.5rem",
     fontSize: "1.2rem",
     fontFamily: "Playfair Display",
   },
   coupleName: {
-    color: "#4b2a1b",
+    color: "#334443",
     fontSize: "1.4rem",
     fontWeight: "bold",
     fontFamily: "Playfair Display",
   },
-  copyrightSection: {
-    height: "10rem",
-    width: "100%",
-    backgroundColor: "#5c3e33",
-    backgroundPosition: "center",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "0 1rem",
-  },
-  copyrightTitle: {
-    color: "#fff",
-    fontSize: "1.2rem",
-    marginBottom: "0.8rem",
-    fontWeight: "bold",
-  },
-  copyrightText: {
-    color: "#fff",
-    fontSize: "0.9rem",
-  },
+  // copyrightSection: {
+  //   height: "10rem",
+  //   width: "100%",
+  //   backgroundColor: "#FDFAF6",
+  //   backgroundPosition: "center",
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   padding: "0 1rem",
+  // },
+  // copyrightTitle: {
+  //   color: "#334443",
+  //   fontSize: "1.2rem",
+  //   marginBottom: "0.8rem",
+  //   fontWeight: "bold",
+  // },
+  // copyrightText: {
+  //   color: "#334443",
+  //   fontSize: "0.9rem",
+  // },
 };
 
 // Media queries to make it responsive
@@ -616,7 +618,7 @@ const responsiveStyles = `
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: 120px;
     }
-    .responsive-wayang-large {
+    .responsive-bunga-large {
         width: 100px;
         height: 100px;
     }
@@ -637,11 +639,11 @@ export default function App() {
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
   const btnRef = useRef(null);
-  const wayang1Ref = useRef(null);
-  const wayang2Ref = useRef(null);
+  const bunga1Ref = useRef(null);
+  const bunga2Ref = useRef(null);
   const audioRef = useRef(null);
 
-  const [guestName, setGuestName] = useState("Fulan");
+  const [guestName, setGuestName] = useState("");
 
   const playAnimation = () => {
     const tl = gsap.timeline();
@@ -661,14 +663,14 @@ export default function App() {
       "<"
     );
 
-    // Wayang kiri ke kiri, kanan ke kanan
-    tl.to(wayang1Ref.current, {
+    // bunga kiri ke kiri, kanan ke kanan
+    tl.to(bunga1Ref.current, {
       x: "-150",
       duration: 1,
       ease: "power2.out",
     });
     tl.to(
-      wayang2Ref.current,
+      bunga2Ref.current,
       {
         x: "150",
         duration: 1,
@@ -763,8 +765,8 @@ export default function App() {
         style={{ ...styles.section1, backgroundImage: `url(${bg1})` }}
       >
         <img
-          src={wayang1}
-          style={styles.wayang1}
+          src={bunga1}
+          style={styles.bunga1}
           alt=""
           width="80"
           height="120"
@@ -772,9 +774,9 @@ export default function App() {
 
         <h4 style={styles.section1Text}>THE WEDDING OF</h4>
 
-        <h2 style={styles.section1Title}>Santi & Mantri</h2>
+        <h2 style={styles.section1Title}>Arga & Maya</h2>
 
-        <h4 style={styles.section1Subtitle}>MINGGU, 21 SEPTEMBER 2025</h4>
+        <h4 style={styles.section1Subtitle}>MINGGU, 12 Oktober 2025</h4>
 
         <div style={{ textAlign: "center", marginBottom: "1.5rem" }}>
           <p style={styles.toText}>Kepada Yth:</p>
@@ -796,20 +798,20 @@ export default function App() {
         ref={section2Ref}
         style={{ ...styles.section2, backgroundImage: `url(${bg2})` }}
       >
-        <div style={styles.section2WayangContainer}>
+        <div style={styles.section2bungaContainer}>
           <img
-            ref={wayang1Ref}
-            src={wayang1}
+            ref={bunga1Ref}
+            src={bunga1}
             alt=""
-            style={styles.wayangImage}
+            style={styles.bunga}
             width="220"
             height="50"
           />
           <img
-            ref={wayang2Ref}
-            src={wayang2}
+            ref={bunga2Ref}
+            src={bunga2}
             alt=""
-            style={{ ...styles.wayangImage, ...styles.wayang2 }}
+            style={{ ...styles.bunga, ...styles.bunga2 }}
             width="220"
             height="50"
           />
@@ -825,16 +827,16 @@ export default function App() {
           <div style={styles.roundedCard} id="div">
             <div style={styles.cardContent}>
               <h5 style={styles.cardH5}>THE WEDDING OF</h5>
-              <h1 style={styles.cardH1}>Santi</h1>
+              <h1 style={styles.cardH1}>Maya</h1>
               <h3 style={styles.cardH3}>&</h3>
-              <h1 style={styles.cardH1}>Mantri</h1>
-              <h5 style={styles.cardH5}>MINGGU, 21 SEPTEMBER 2025</h5>
+              <h1 style={styles.cardH1}>Arga</h1>
+              <h5 style={styles.cardH5}>MINGGU, 12 Oktober 2025</h5>
             </div>
           </div>
         </div>
 
         <div style={styles.section3BgBrown}>
-          <img src={wayang1} alt="" style={styles.wayang1Large} id="img" />
+          <img src={bunga1} alt="" style={styles.bunga1Large} id="img" />
           <h2 style={styles.weFoundLove} id="text">
             WE FOUND LOVE
           </h2>
@@ -870,7 +872,7 @@ export default function App() {
                 <br />
                 menghadiri acara pernikahan putra-putri kami:
               </p>
-              <h1 style={styles.brideName}>Santi</h1>
+              <h1 style={styles.brideName}>Maya</h1>
               <h3
                 style={{
                   ...styles.familyText,
@@ -878,15 +880,15 @@ export default function App() {
                   fontWeight: "500",
                 }}
               >
-                Tri Susanti
+                Maya Yunita
               </h3>
               <p style={styles.familyText}>
                 Putri Ketiga dari
                 <br />
-                Bpk. Kamilin & Ibu Endang Kurniati
+                Bpk. Soengkoboeno & Ibu Oyat Tamiya
               </p>
               <h1 style={styles.andSign}>&</h1>
-              <h1 style={styles.brideName}>Mantri</h1>
+              <h1 style={styles.brideName}>Arga</h1>
               <h3
                 style={{
                   ...styles.familyText,
@@ -894,12 +896,12 @@ export default function App() {
                   fontWeight: "500",
                 }}
               >
-                Mantri
+                Arga
               </h3>
               <p style={{ ...styles.familyText, marginBottom: "3rem" }}>
                 Putra Ketiga dari
                 <br />
-                Bpk. Miit Tonin & Ibu Puah
+                Bpk. Azwir & Ibu Soejatmiko
               </p>
             </div>
           </div>
@@ -912,18 +914,16 @@ export default function App() {
           >
             <img src={cincin} alt="" style={styles.ringImg} />
             <h1 style={styles.akadTitle}>AKAD NIKAH</h1>
-            <h3 style={styles.eventDate}>Minggu, 21 September 2025</h3>
+            <h3 style={styles.eventDate}>Minggu, 12 Oktober 2025</h3>
             <h5 style={styles.eventTime}>Pukul: 09.00 WIB</h5>
-            <h5 style={styles.eventLocationTitle}>
-              Bertempat dikediaman mempelai wanita
-            </h5>
+            <h5 style={styles.eventLocationTitle}>Bertempat Hotel Ayana</h5>
             <p style={styles.eventLocation}>
-              Rw. Panjang, Kecamatan Bojonggede,
+              SKY at AYANA Resort
               <br />
-              Kabupaten Bogor, Jawa Barat 16920
+              Bali, Indonesia
             </p>
             <a
-              href="https://maps.app.goo.gl/NqNUfkEM6TjamRNU9"
+              href="https://maps.app.goo.gl/WoAnE99b2ydQu8ic9"
               target="_blank"
               style={styles.openMapsBtn}
             >
@@ -935,18 +935,16 @@ export default function App() {
             id="div"
           >
             <h1 style={styles.akadTitle}>RESEPSI</h1>
-            <h3 style={styles.eventDate}>Minggu, 21 September 2025</h3>
+            <h3 style={styles.eventDate}>Minggu, 12 Oktober 2025</h3>
             <h5 style={styles.eventTime}>Pukul: 11.00 WIB s.d selesai</h5>
-            <h5 style={styles.eventLocationTitle}>
-              Bertempat dikediaman mempelai wanita
-            </h5>
+            <h5 style={styles.eventLocationTitle}>Bertempat Hotel Ayana</h5>
             <p style={styles.eventLocation}>
-              Rw. Panjang, Kecamatan Bojonggede,
+              SKY at AYANA Resort
               <br />
-              Kabupaten Bogor, Jawa Barat 16920
+              Bali, Indonesia
             </p>
             <a
-              href="https://maps.app.goo.gl/NqNUfkEM6TjamRNU9"
+              href="https://maps.app.goo.gl/WoAnE99b2ydQu8ic9"
               target="_blank"
               style={styles.openMapsBtn}
             >
@@ -960,9 +958,7 @@ export default function App() {
             <h2 style={styles.countdownTitle}>Counting The Day</h2>
             <Countdown />
             <a
-              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Santi+%26+Mantri&dates=20250921T020000Z/20250921T050000Z&details=Resepsi+Pernikahan&location=Rw.+Panjang,+Bojonggede,+Bogor"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Maya+%26+Arga&dates=20251012T020000Z/20251012T050000Z&details=Resepsi+Pernikahan&location=Rw.+Panjang,+Bojonggede,+Bogor"
               style={styles.saveCalendarBtn}
             >
               <FaCalendarPlus style={{ marginRight: "0.5rem" }} /> SIMPAN DI
@@ -1018,11 +1014,11 @@ export default function App() {
           >
             <img src={bni} alt="" style={styles.bniLogo} />
             <div style={styles.accountInfo}>
-              <h2 style={styles.accountNumber}>1910451894</h2>
-              <h2 style={styles.accountName}>Tri Susanti</h2>
+              <h2 style={styles.accountNumber}>1910263748</h2>
+              <h2 style={styles.accountName}>Maya Yunita</h2>
               <button
                 onClick={() => {
-                  navigator.clipboard.writeText("1910451894");
+                  navigator.clipboard.writeText("1910263748");
                   alert("Nomor rekening berhasil disalin!");
                 }}
                 style={styles.copyBtn}
@@ -1035,9 +1031,9 @@ export default function App() {
 
         <div style={styles.bestWishesSection}>
           <img
-            src={wayang1}
+            src={bunga1}
             alt=""
-            style={{ ...styles.wayang1Large, marginTop: "1.2rem" }}
+            style={{ ...styles.bunga1Large, marginTop: "1.2rem" }}
             id="img"
           />
           <h1 style={styles.bestWishesTitle} id="text">
@@ -1097,6 +1093,7 @@ export default function App() {
         <div
           style={{ ...styles.footerSection, backgroundImage: `url(${bg5})` }}
         >
+          <h2 style={styles.footerText}>Terima Kasih</h2>
           <p style={styles.footerText} id="text">
             Merupakan suatu kebahagian dan kehormatan bagi kami, apabila
             <br />
@@ -1108,14 +1105,11 @@ export default function App() {
             KAMI YANG BERBAHAGIA
           </h2>
           <h1 style={styles.coupleName} id="text">
-            Santi & Mantri
+            Arga & Maya
           </h1>
         </div>
 
-        <div style={styles.copyrightSection}>
-          <h2 style={styles.copyrightTitle}>Thank You</h2>
-          <p style={styles.copyrightText}></p>
-        </div>
+        {/* <div style={styles.copyrightSection}></div> */}
       </section>
     </div>
   );
